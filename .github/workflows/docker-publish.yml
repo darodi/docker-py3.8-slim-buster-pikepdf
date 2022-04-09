@@ -18,17 +18,17 @@ on:
       - '.gitignore'
       - '.dockerignore'
       
-  pull_request:
-    branches: [ main ]
-    
-    # Don't trigger if it's just a documentation update
-    paths-ignore:
-      - '**.md'
-      - '**.yml'
-      - 'LICENSE'
-      - '.gitattributes'
-      - '.gitignore'
-      - '.dockerignore'
+#  pull_request:
+#    branches: [ main ]
+#
+#    # Don't trigger if it's just a documentation update
+#    paths-ignore:
+#      - '**.md'
+#      - '**.yml'
+#      - 'LICENSE'
+#      - '.gitattributes'
+#      - '.gitignore'
+#      - '.dockerignore'
 
 jobs:
   build_and_push:
