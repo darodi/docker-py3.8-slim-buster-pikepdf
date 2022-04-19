@@ -50,6 +50,8 @@ RUN set -x && \
     KEPT_PACKAGES+=(libfreetype6) && \
     KEPT_PACKAGES+=(libfontconfig1) && \
     KEPT_PACKAGES+=(python3-wheel) && \
+    KEPT_PACKAGES+=(libjpeg62-turbo) && \
+    KEPT_PACKAGES+=(libxcb1) && \
     # Install packages
     DEBIAN_FRONTEND=noninteractive apt-get update -y && apt-get -yq upgrade && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
@@ -119,6 +121,8 @@ RUN set -x && \
     KEPT_PACKAGES+=(libfreetype6) && \
     KEPT_PACKAGES+=(libfontconfig1) && \
     KEPT_PACKAGES+=(python3-wheel) && \
+    KEPT_PACKAGES+=(libjpeg62-turbo) && \
+    KEPT_PACKAGES+=(libxcb1) && \
     # Install packages
     DEBIAN_FRONTEND=noninteractive apt-get update -y && apt-get -yq upgrade && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
@@ -188,6 +192,8 @@ RUN set -x && \
     KEPT_PACKAGES+=(libfreetype6) && \
     KEPT_PACKAGES+=(libfontconfig1) && \
     KEPT_PACKAGES+=(python3-wheel) && \
+    KEPT_PACKAGES+=(libjpeg62-turbo) && \
+    KEPT_PACKAGES+=(libxcb1) && \
     # Install packages
     DEBIAN_FRONTEND=noninteractive apt-get update -y && apt-get -yq upgrade && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
